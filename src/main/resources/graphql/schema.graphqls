@@ -1,0 +1,43 @@
+type Book {
+    bookId: ID
+    isbn: String
+    publishDate: String
+    author: Author
+    title: String
+    publisher: Publisher
+    price: Float
+}
+
+type Publisher {
+    publisherId: ID
+    name: String
+    street: String
+    city: String
+    state: String
+    postalCode: String
+    phone: String
+    email: String
+    books: [Book]
+}
+# Only have "!" on things that are not null in sql schema and not on ID
+type Author {
+    authorId: ID
+    firstName: String
+    lastName: String
+    street: String
+    city: String
+    state: String
+    postalCode: String
+    phone: String
+    email: String
+    Books:[Book]
+}
+
+type Query {
+    authors:[Author]
+    books:[Book]
+    publishers:[Publisher]
+    findBookById(book_id:ID):Book
+    findPublisherById(publisher_id:ID):Publisher
+    findAuthorById(author_id:ID):Author
+}
