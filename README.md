@@ -34,3 +34,6 @@ also wanted it to work the way it was intended to.
 
 That is all for my README. If you have any more questions, please reach out to me at
 georgepitcher11@gmail.com.
+
+Here is the link to my youtube video on this project!
+https://www.youtube.com/watch?v=yCDF2NWG5pE&ab_channel=georgealvarado
