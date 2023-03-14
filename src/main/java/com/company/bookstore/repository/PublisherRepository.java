@@ -8,6 +8,10 @@ import org.springframework.stereotype.Repository;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * PublisherRepository class that will be used to connect
+ * the PublisherController class with the Database.
+ */
 @Repository
 public interface PublisherRepository extends JpaRepository<Publisher, Integer> {
 

@@ -25,5 +25,12 @@ firstName and postalCode). Lastly, he helped me understand how to create the One
 relationship in the models, and how to shape that up in the GraphQL types. Big thanks
 to him.
 
+One thing I wasn't able to figure out by myself was how to get authors from publishers.
+This is something that Jessie Estrada showed me to do using the @SchemaMapping methods
+in the Graph Controller. He was the one who gave me the code granted he did say he got
+it from an office hours session. I waited til after the deadline to ask about it so
+that it wouldn't count towards my grade, but I still wanted to know how it worked. I
+also wanted it to work the way it was intended to.
+
 That is all for my README. If you have any more questions, please reach out to me at
 georgepitcher11@gmail.com.
