@@ -105,7 +105,7 @@ public class PublisherRepositoryTest {
         publisher2 = publisherRepository.save(publisher2);
 
         List<Publisher> pList = publisherRepository.findAll();
-        assertEquals(pList.size(), 2);
+        assertEquals(pList.size(), 3);
     }
 
     // Test Update Publisher

@@ -52,7 +52,7 @@ public class BookRepositoryTest {
         newAuthor.setEmail("brickbybrick@gmail.com");
         newAuthor.setPostalCode("98120");
         newAuthor.setStreet("Brick Street");
-        authorRepository.save(newAuthor);
+        newAuthor = authorRepository.save(newAuthor);
 
         newPublisher = new Publisher();
         newPublisher.setCity("Lego City");
@@ -62,7 +62,7 @@ public class BookRepositoryTest {
         newPublisher.setPhone("2061880090");
         newPublisher.setStreet("Breads Ave");
         newPublisher.setPostalCode("98120");
-        publisherRepository.save(newPublisher);
+        newPublisher = publisherRepository.save(newPublisher);
 
 
         newBook = new Book();
@@ -73,7 +73,7 @@ public class BookRepositoryTest {
         newBook.setTitle("I stepped on a Lego, but it didn't hurt");
         newBook.setPrice(BigDecimal.valueOf(7.55));
         newBook.setPublisherId(newPublisher.getPublisherId());
-        bookRepository.save(newBook);
+        newBook = bookRepository.save(newBook);
     }
 
     //Create Book
@@ -83,9 +83,9 @@ public class BookRepositoryTest {
         Book book = new Book();
         book.setIsbn("100110101");
         book.setPublishDate(LocalDate.of(2020, 10, 20));
-        book.setAuthorId(1345431);
+        book.setAuthorId(newAuthor.getAuthorId());
         book.setTitle("Book of Thieves");
-        book.setPublisherId(123345);
+        book.setPublisherId(newPublisher.getPublisherId());
         book.setPrice(BigDecimal.valueOf(18.99));
 
         book = bookRepository.save(book);
